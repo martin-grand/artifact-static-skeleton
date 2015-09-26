@@ -1,0 +1,35 @@
+// typo:
+h1 {
+	@extend .typo--h1;
+}
+
+h2 {
+	@extend .typo--h2;
+}
+
+h3 {
+	@extend .typo--h3;
+}
+
+p {
+	@extend .typo--p;
+}
+
+small {
+	@extend .typo--small;
+}
+
+html {
+	@extend .typo--p;
+}
+
+// colors:
+html {
+	@extend .css--bg--white;
+}
+
+html,
+textarea,
+input {
+	@extend .css--color--black;
+}

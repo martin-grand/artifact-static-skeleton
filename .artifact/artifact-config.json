@@ -1,0 +1,15 @@
+{
+	"projectName": "Artifact - static skeleton",
+
+	"jsSourcePath": "frontend/js",
+	"jsDestinationPath": "www/js",
+	"jsWatchPath": "frontend/js/**/*.js",
+
+	"scssSourcePath": "frontend/scss/app.scss",
+	"scssDestinationPath": "www/css/app.css",
+	"scssWatchPath": "frontend/scss/**/*.scss",
+	"scssDirPath": "frontend/scss/",
+
+	"svgSpriteSourcePath": "frontend/i/svg-sprite/",
+	"svgSpriteDestinationPath": "www/i/sprite.svg"
+}

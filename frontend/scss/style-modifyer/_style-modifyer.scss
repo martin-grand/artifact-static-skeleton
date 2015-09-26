@@ -1,0 +1,20 @@
+@include block('css') {
+    @include colorize(bg, background);
+    @include colorize(color, color);
+    @include css-modifyer(display, inline);
+    @include css-modifyer(display, inline-block);
+    @include css-modifyer(display, block);
+    @include css-modifyer(display, none);
+    @include css-modifyer(position, static);
+    @include css-modifyer(position, relative);
+    @include css-modifyer(position, absolute);
+    @include css-modifyer(position, fixed);
+    @include css-modifyer(top, 0);
+    @include css-modifyer(left, 0);
+    @include css-modifyer(right, 0);
+    @include css-modifyer(bottom, 0);
+    @include css-modifyer(vertical-align, top);
+    @include css-modifyer(vertical-align, middle);
+    @include css-modifyer(vertical-align, baseline);
+    @include css-modifyer(pointer-events, none);
+}

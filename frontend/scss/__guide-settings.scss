@@ -1,0 +1,11 @@
+$color: (
+	'green': #13d05e,
+	'white' : #f5f6f6,
+	'black' : #313744
+);
+
+$base-number: 3;
+$base-sub-size: $base-number * 1px;
+$base-size: 3 * $base-sub-size;
+$base-font: 'Roboto Condensed', sans-serif;
+$base-interaction-time: .3s;

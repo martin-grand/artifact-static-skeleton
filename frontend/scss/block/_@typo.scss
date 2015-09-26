@@ -1,0 +1,99 @@
+/**
+
+    <div class="typo typo--h1">h1 size text example (.typo.typo--h1)
+        Lorem ipsum dolor
+    </div>
+    <div class="typo typo--h2">h2 size text example (.typo.typo--h2)
+        Lorem ipsum dolor sit amet consectetur
+    </div>
+    <div class="typo typo--h3">h3 size text example (.typo.typo--h3)
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+    </div>
+    <div class="typo typo--lead">lead text example (.typo.typo--lead)
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+    </div>
+    <div class="typo typo--p">paragraph text example (.typo.typo--p)
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+    </div>
+    <div class="typo typo--small">small text example (.typo.typo--small)
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae debitis eveniet praesentium quas qui,
+        quo repellat totam. Accusamus consectetur dolores eligendi est facilis fugiat laborum molestias quo temporibus
+        vitae.
+    </div>
+    <div class="typo">
+        <span class="typo--h1">.typo--h1</span>
+        <span class="typo--h2">.typo--h2</span>
+    </div>
+    <div class="typo">
+        <span class="typo--h3">.typo--h3</span>
+        <span class="typo--lead">.typo--lead</span>
+        <span class="typo--p">.typo--p</span>
+        <span class="typo--small">.typo--small</span>
+    </div>
+
+*/
+
+@include block(typo) {
+	max-width: 600px;
+	margin-bottom: px(1, 3);
+	font-family: $base-font;
+
+	@include modifyer(h1) {
+		font-size: px(9);
+		line-height: px(9);
+		font-weight: normal;
+		letter-spacing: 0;
+	}
+
+	@include modifyer(h2) {
+		font-size: px(6);
+		line-height: px(6);
+		font-weight: normal;
+		letter-spacing: .1px;
+	}
+
+	@include modifyer(h3) {
+		font-size: px(3);
+		line-height: px(3, 2);
+		font-weight: normal;
+		letter-spacing: .2px;
+	}
+
+	@include modifyer(lead) {
+		font-size: px(2, 1);
+		line-height: px(2, 3);
+		font-weight: normal;
+		letter-spacing: .3px;
+	}
+
+	@include modifyer(p) {
+		font-size: px(1, 2);
+		line-height: px(1, 3);
+		font-weight: normal;
+		letter-spacing: .4px;
+	}
+
+	@include modifyer(small) {
+		font-size: px(1, 1);
+		line-height: px(1, 2);
+		font-weight: normal;
+		letter-spacing: .5px;
+		opacity: .8;
+	}
+
+}

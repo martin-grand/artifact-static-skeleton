@@ -1,0 +1,35 @@
+@mixin block($name:'') {
+	.#{$name} {
+		@content;
+	}
+}
+
+@mixin element($name) {
+	&__#{$name} {
+		@content;
+	}
+}
+
+@mixin modifyer($name) {
+	&--#{$name} {
+		@content;
+	}
+}
+
+@mixin css-modifyer($property, $value) {
+	@include modifyer($property) {
+		@include modifyer($value) {
+			#{$property}: $value;
+		}
+	}
+}
+
+@mixin colorize($modifyerName, $property) {
+	@include modifyer($modifyerName) {
+		@each $colorName, $colorValue in $color {
+			@include modifyer($colorName) {
+				#{$property} : $colorValue;
+			}
+		}
+	}
+}

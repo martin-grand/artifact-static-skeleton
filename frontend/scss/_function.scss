@@ -1,0 +1,15 @@
+@function px($size, $sub-size: 0) {
+    @return ($size * $base-size) + ($sub-size * $base-sub-size);
+}
+
+@function sub-px($sub-size) {
+    @return px(0, $sub-size);
+}
+
+@function color($color-name, $alpha: false) {
+    @if ($alpha) {
+        @return rgba(map-get($color, $color-name), $alpha);
+    } @else {
+        @return map-get($color, $color-name);
+    }
+}
